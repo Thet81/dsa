@@ -22,3 +22,17 @@ const bubbleSort = (list)=> {
 }
 
 console.log(bubbleSort([65,55,45,35,25,15,10]))
+
+// [3,9,2,0,6]
+// 1st pass through 3-9 9-2 9-0 9-6 (total of four comparision)
+// result [3,2,0,6,9]
+
+// 2nd pass through 3-2 3-0 3-6 (total of three comparison)
+//result [2,0,3,6,9]
+
+//3rd pass through 2-0 2-3 (total of two comparison)
+//result [0,2,3,6,9]
+
+//4th pass through 0-2 (total of one comparison)
+
+// total comparisons = 4 + 3 + 2 + 1 = 10 comparisons
